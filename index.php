@@ -35,7 +35,7 @@
 			else {
 				$query = "INSERT INTO user (email,password) VALUES('".mysqli_real_escape_string($link, $_POST['email'])."' , '". md5(md5($_POST['email']).$_POST['password'])."')";
 				if (mysqli_query($link, $query))	echo "You have successfully Signed-Up!";
-				else echo "Error: " . $query . "<br>" . mysqli_error($link);
+				// else echo "Error: " . $query . "<br>" . mysqli_error($link);
 			}
 
 		}
