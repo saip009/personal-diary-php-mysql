@@ -1,4 +1,4 @@
-<? include("signing.php") ?>
+<?php include("signin.php"); ?>
 
 
 <form method="POST" novalidate>
@@ -12,8 +12,8 @@
 
 <form method="POST" novalidate>
 
-	<input type="email" name="signinemail" id="signinemail" value="<?php echo isset($_POST['email']) ? addslashes($_POST['email']) : ''; ?>" />
-	<input type="password" name="signinpassword" id="signinpassword" value="<?php echo isset($_POST['password']) ? addslashes($_POST['password']) : ''; ?>" />
+	<input type="email" name="signinemail" id="signinemail" value="<?php echo isset($_POST['signinemail']) ? addslashes($_POST['signinemail']) : ''; ?>" />
+	<input type="password" name="signinpassword" id="signinpassword" value="<?php echo isset($_POST['signinpassword']) ? addslashes($_POST['signinpassword']) : ''; ?>" />
 	<input type="submit" name="submit" value="Sign In" />
 
 </form>
